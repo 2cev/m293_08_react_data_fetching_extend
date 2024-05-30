@@ -42,6 +42,25 @@ export default function App() {
             </select>
           </section>
         </main>
+
+        {/* 
+        {products.map((p) =>
+          // O_o ===> ==> =>
+          // <div key={p.id} className="product">
+          //   <a href="/">
+          //     <img src={`/images/${p.image}`} alt={p.name} />
+          //     <h3>{p.name}</h3>
+          //     <p>${p.price}</p>
+          //   </a>
+          // </div>
+          // O_o <= <== <===
+        )}
+        */}
+
+        <div class="products">
+              {products.map(renderProduct)}
+        </div>
+
       </div>
       <Footer />
     </>
